@@ -4,11 +4,35 @@ This project contains admin side as well as user side.
 User has to first register to the portal before uploading songs.
 The account verification mechanism have been included in the project to verify user authentication.
 
-*create database named "musical_world" at back-end and import the code tables.sql file inside databse folder to get access to database*
+## Installation
 
-This is basically my DBMS mini project.
-The site basically includes triggers and procedures.
-So before running the application create a trigger and a procedure at back-end(xampp or wamp any application).
+1. **Start XAMPP:**
+   - Open the XAMPP control panel.
+   - Start the Apache and MySQL services by clicking on the "Start" buttons next to them.
+
+2. **Create a Database:**
+   - Open your web browser and go to `http://localhost/phpmyadmin`.
+   - Log in using the default credentials (username: `root`, password: blank).
+   - Click on the "Databases" tab and create a new database for your project.
+
+3. **Import Database Schema (Optional):**
+   - If you have a database schema file (`.sql`), you can import it into your newly created database using phpMyAdmin.
+
+4. **Create Project Directory:**
+   - Navigate to the `htdocs` directory inside your XAMPP installation folder (usually located at `C:\xampp\htdocs` on Windows or `/Applications/XAMPP/htdocs` on macOS).
+   - Create a new directory for your project.
+
+5. **Write PHP Scripts:**
+   - Inside your project directory, create PHP files for your project's functionality. You can use a text editor or an integrated development environment (IDE) for this purpose.
+
+6. **Access Your Project:**
+   - Open your web browser and go to `http://localhost/your_project_directory`.
+
+7. **Test Your Project:**
+   - Verify that your project is working as expected by testing the functionality.
+
+
+*create database named "musical_world" at back-end and import the code tables.sql file inside databse folder to get access to database*
 
 Code for triggers and procedure are given below.
 
@@ -30,16 +54,6 @@ INSERT INTO upload_albums(`singer_id`,`song_name`,`song_format`,`singer_name`,`s
 DELIMITER ;
 ```
 ```
+```
 #  Note: do not forget to add your email credentials validate.php and activate_email.php file so as to send email notifications
-
-Some Glimps....
-
-![screenshot 56](https://user-images.githubusercontent.com/38497682/52524811-476dc100-2cc7-11e9-9269-acc1bf00997c.png)
-
-
-![screenshot 57](https://user-images.githubusercontent.com/38497682/52524822-610f0880-2cc7-11e9-8ad6-ff56945583d0.png)
-
-
-![screenshot 61](https://user-images.githubusercontent.com/38497682/52524832-80a63100-2cc7-11e9-902a-62b0b52d14a1.png)
-
 
